@@ -14,6 +14,7 @@ public class Desafio02CadastroSimples {
     String cidade = sc.nextLine();
     
     System.out.println("==== Cadastro ====");
+        System.out.println();
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade + " anos");
         System.out.println("Cidade: " + cidade);
