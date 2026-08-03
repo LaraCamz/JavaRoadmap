@@ -10,7 +10,7 @@ public class Desafio01Variaveis {
         
         System.out.println("Olá, " + nome + "!");
         System.out.println("Bem-vinda ao Java.");
-        
+ 
           sc.close();
     }
 }
