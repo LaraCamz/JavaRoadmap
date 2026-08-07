@@ -30,9 +30,10 @@ public class Desafio17CaixaEletrônico_Parte1 {
                     double deposito = sc.nextDouble();
                     if(deposito <= 0){
                         System.out.println("Operação não realizada. O valor do depósito deve ser maior que R$ 0,00.");
+                        break;
                     }
                     System.out.printf("+%.2f%n", deposito);
-                    saldo = saldo + deposito;
+                    saldo += deposito;
                      System.out.printf("Saldo atual: %.2f"
                             + "%n", saldo);
                     break;
@@ -40,9 +41,12 @@ public class Desafio17CaixaEletrônico_Parte1 {
                 case "3":
                     System.out.println("Quanto deseja sacar? ");
                     double saque = sc.nextDouble();
-                    if(saldo >= saque){
+                     if(saque <= 0){
+                        System.out.println("Operação não realizada. O valor do saque deve ser maior que R$ 0,00.");
+                        break;
+                    }else if(saldo >= saque){
                         System.out.printf("-%.2f%n", saque);
-                        saldo = saldo - saque;    
+                        saldo -= saque;    
                          System.out.printf("Saldo atual: %.2f"
                             + "%n", saldo);
                     }else if(saldo < saque){
