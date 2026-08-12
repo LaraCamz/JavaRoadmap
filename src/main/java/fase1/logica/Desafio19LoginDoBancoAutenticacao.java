@@ -12,7 +12,7 @@ public class Desafio19LoginDoBancoAutenticacao {
             int tentativas = 3;
             int aux = 3;
 
-            while (tentativas != 0 || aux != 0) {
+            while (tentativas != 0 && aux != 0) {
                 
             System.out.printf("Tentativas restantes: %d %n", tentativas);    
             System.out.println("Digite o usuario: ");
@@ -37,6 +37,7 @@ public class Desafio19LoginDoBancoAutenticacao {
                     System.out.println("Conta bloqueada.\n"
                             + "\n"
                             + "Encerrando sistema...");
+                    aux = 0; 
 
                 }
             }
