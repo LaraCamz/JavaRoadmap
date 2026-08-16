@@ -6,32 +6,33 @@ public class Desafio24_5AtualizacaoPassoAPasso {
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            int menor = 0;
-            int maior = 0;
 
-            
+            int maior;
+            int menor;
 
-            for (int i = 1; i <= 5; i++) {
+            System.out.println("Digite 5 números: ");
+
+            System.out.println("Número 1:");
+            int numAtual = sc.nextInt();
+
+            maior = numAtual;
+            menor = numAtual;
+
+            for (int i = 2; i <= 5; i++) {
+
                 System.out.println("Número " + i + ":");
-                int numAtual = sc.nextInt();
+                numAtual = sc.nextInt();
 
-                if (i == 1) {
-                    maior = numAtual;
+                if (numAtual < menor) {
                     menor = numAtual;
                 }
 
-                if (numAtual <= menor) {
-                    menor = numAtual;
-
-                }
-                if (numAtual >= maior) {
+                if (numAtual > maior) {
                     maior = numAtual;
-
                 }
 
                 System.out.println("Maior: " + maior);
                 System.out.println("Menor: " + menor);
-
             }
 
         }
