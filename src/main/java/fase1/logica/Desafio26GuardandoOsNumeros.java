@@ -31,3 +31,12 @@ public class Desafio26GuardandoOsNumeros {
     }
 
 }
+/*Criando pelo tamanho:
+int[] numeros = new int[5];
+
+Criando pelos valores:
+int[] numeros = new int[]{10, 20, 30, 40, 50};
+
+Forma simplificada:
+int[] numeros = {10, 20, 30, 40, 50};
+*/
