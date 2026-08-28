@@ -24,7 +24,6 @@ public class Desafio28MaiorEMenorDoVetor {
             }
 
             for (int i = 0; i < num1; i++) {
-                System.out.println(vetor[i]);
 
                 if (i == 0) {
                     maior = vetor[i];
@@ -39,11 +38,9 @@ public class Desafio28MaiorEMenorDoVetor {
                     maior = vetor[i];
                 }
 
-                
             }
             System.out.println("Maior número: " + maior);
             System.out.println("Menor número: " + menor);
-
 
         }
 

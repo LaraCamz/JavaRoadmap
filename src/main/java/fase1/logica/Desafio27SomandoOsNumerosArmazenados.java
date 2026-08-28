@@ -1,4 +1,5 @@
 package fase1.logica;
+
 import java.util.Scanner;
 
 public class Desafio27SomandoOsNumerosArmazenados {
