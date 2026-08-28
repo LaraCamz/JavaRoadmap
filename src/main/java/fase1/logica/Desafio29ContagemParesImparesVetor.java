@@ -24,6 +24,7 @@ public class Desafio29ContagemParesImparesVetor {
                 System.out.println("Número " + cont + ": ");
                 int num2 = sc.nextInt();
                 vetor[i] = num2;
+                cont++;
             }
 
             for (int a = 0; a < num1; a++) {
@@ -31,8 +32,7 @@ public class Desafio29ContagemParesImparesVetor {
                     quantPar++;
                 } else {
                     quantImp++;
-                }
-                cont++;
+                }  
             }
             System.out.println("===== RESULTADO =====");
             System.out.println("Quantidade de pares: " + quantPar);
